@@ -1,0 +1,12 @@
+Työvuorolista koostuu ajassa peräkkäin tehtävistä työvuoroista ja vapaapäivistä. Yksi vaikeimmista asioista työvuorolistan muodostamisessa on yövuorojen sijoittaminen listaan. Tehtävänäsi on koodata algoritmi, joka tarkistaa onko yövuorot listassa kuten pitäisi. Lisäksi joudut miettimään, että miten virheistä rangaistaan.
+Säännöt: Yövuoroja voi olla peräkkäin 1 – 5. Jokaisen yövuoron jälkeen on tai ei ole nk. nukkumapäivä, jolloin siis ei ole töitä vaan se on varattu nukkumiseen. Tämän lisäksi nukkumapäivän jälkeen on joko kiinteä määrä vapaapäiviä (1 – 2) tai yövuorojen määrästä riippuva määrä vapaapäiviä. Yövuoroja ennen voi olla mitä tahansa vuoroja tai vapaapäiviä.
+Esimerkkejä:
+•	yövuorojen jälkeen oltava nukkumapäivä + vähintään 2 vapaapäivää
+•	yövuorojen jälkeen oltava nukkumapäivä + vähintään 1 vapaapäivä
+•	yövuorojen jälkeen oltava vähintään 2 vapaapäivää
+•	yövuorojen jälkeen oltava vähintään 1 vapaapäivä
+•	n:n yövuoron jälkeen oltava vähintään n vapaapäivää
+•	n:n yövuoron jälkeen oltava vähintään n-1 vapaapäivää
+•	n:n yövuoron jälkeen oltava vähintään n-2 vapaapäivää
+Sinulla on täysin vapaat kädet ratkaista asia parhaaksi katsomallasi tavalla. Algoritmisi tulee kertoa, onko yövuorot + vapaapäivät sijoitettu oikein ja antaa erilaisista virhetilanteista rankkareita. Mitä pahemmin yövuorot on sijoitettu väärin, sitä enemmän pitää rankkareita tulla. Huomaa, että työvuorolistassa voi myös olla muita kuin yövuoroja. Kaikki muita vuoroja voit käsitellä yhtenä eli samalla tavalla.
+Testaa ratkaisusi runsaalla määrällä esimerkkejä. Sinun on oltava valmis esittämään tunnilla ratkaisusi. Tämä tehtävä tarkistetaan luentoajankohtana viikolla 13.
