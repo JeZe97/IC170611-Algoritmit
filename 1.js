@@ -1,13 +1,9 @@
 function run() {
-    // TODO
-    // • n:n yövuoron jälkeen oltava vähintään n vapaapäivää
-    // • n:n yövuoron jälkeen oltava vähintään n-1 vapaapäivää
-    // • n:n yövuoron jälkeen oltava vähintään n-2 vapaapäivää
-    
     let dayOffsAfterNight = 3
-    // let nDayOffsAfterNight = 0
+    let nDayOffsAfterNight = false
+    let nDayOffsAfterNightModifier = -1
     let numberOfShifts = 10
-    let daysPerShift = 14
+    let daysPerShift = 31
     let dayOffPenalty = 100
 
     // For random shifts with 25% chance for offday, 25% workshift, 50% nightshift
@@ -35,7 +31,12 @@ function run() {
             if (nights[j].count > 5) {
                 testShifts[i].penalty += 100 * nights[j].count
             }
-            checkDayOffs(testShifts[i], nights[j], dayOffsAfterNight, dayOffPenalty)
+            if (nDayOffsAfterNight) {
+                dayOffsAfterNight = nights[j].count + nDayOffsAfterNightModifier
+            }
+            if (dayOffsAfterNight > 0) {
+                checkDayOffs(testShifts[i], nights[j], dayOffsAfterNight, dayOffPenalty)
+            }
         }
     }
     console.log("run -> testShifts", testShifts)
